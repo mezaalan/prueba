@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat.ttf") format("truetype");
+}
+
+html, body {
+    
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    background-color: #2d3c46;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    width: 100%;       /* vw ancho de la pantalla*/
+    height: 20vh;      /* vh alta de la pantalla*/
+    box-sizing: border-box; /* hace que el widthy el heigth incluyan al paffing y al border*/
+    overflow-wrap: break-word; /* evita que el texto largo salga del área visible cortándolo en varias líneas.*/
+}
+
+.menu {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+.menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+.menu a:hover {
+    text-decoration: underline;
+  }
+
+.menu-derecho {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+.menu-derecho a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+.menu-derecho a:hover {
+    text-decoration: underline;
+  }
+
+
+.contenido {
+    background-color: #ebebe6;
+    padding: 10px 0;
+  }
+
+.contenedor {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    margin-bottom: 30px;    
+}
+
+.tarjeta:hover {
+    cursor: grab;
+    box-shadow: 0 0 10px #aaa;
+}
+
+.tarjeta:last-child {
+    margin-bottom: 0;
+}
+.contenedor img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.titulo-secundario {
+    margin: 0;
+}
+
+.pie-de-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    color: #f5f5dc;
+    padding: 30px;
+    margin-top: auto;
+    box-sizing: border-box; 
+  }
+
+.copyright {
+    float: left;
+    width: auto;
+    white-space: normal;
+    line-height: normal;
+    text-align: left;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    color: #bfae9f;
+}
+
+.copyright a {
+    color: #bfae9f;
+    text-decoration: none;
+}
+
+.ir {
+    float: right;
+    width: auto;
+    white-space: normal;
+    line-height: normal;
+    text-align: right;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.ir a {
+    position: fixed;
+    text-decoration: none;
+    font-size: 1.5rem;
+    left: 90%;
+    top: 88%;
+    overflow: hidden;
+    text-align: center;
+    width: max-content;
+    color: #bfae9f;
+  }
+  
+  .ir a:hover {
+    text-decoration: underline;
+  }

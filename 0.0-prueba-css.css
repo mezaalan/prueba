@@ -1,0 +1,217 @@
+body {
+  font-family: 'kapakana', Arial, Helvetica, sans-serif;
+  font-size: 20px
+}
+#primero {
+
+    position: fixed;
+    font-size: xx-large;
+    left: 50%;
+    top: 0;
+    color: aqua;
+    overflow: hidden;
+    text-align: center;
+    width: max-content;
+    transform: translateX(-50%);
+}
+span {
+    display: block;
+}
+
+.contenedor {
+    line-height: normal;
+    font-size: 30px;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+   
+}
+.izquierda {
+    float: left;
+    background-color: #f00;
+    width: 50%;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+.derecha {
+
+    float: right;
+    background-color: #0f0;
+    width: 50%;
+    height: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+.div {
+    font-family:"roboto", 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    margin: auto;
+    background-color: aqua;
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+div, h1 { /*para llamar a otra etiqueta se usa el , */
+    color: aquamarine;
+
+}
+
+div p { /* para llamar a una etiquta dentro de otra*/
+    color: yellow;
+}
+#fondo { /* para llamar id se usa # */
+    height: 200px;
+    background: url(imagen.png) #f00 center / 200px 200px;
+    background-size: cover;
+    
+}
+
+.marco {
+    background-color: aqua;
+    padding: 20px;
+    margin: 15px;
+    color: #f00;
+    width: 150px;
+    height: 100px;
+    border: outset firebrick;
+    overflow: scroll;
+}
+
+.hola  { /* para llamar a una clase */ 
+    color: #000;
+    border-style: solid ;
+    border-radius: 5px;
+    border-color: #f00;
+    border-width: 5px;  
+    font-family: "roboto";
+    
+}
+
+p.rojo { /* etiqueta dentro de otra */ 
+ color: rgb(77, 8, 0);
+ border: 5px black solid; 
+ text-shadow: 2px 3px 5px blue;
+ text-align: right;
+}
+
+a:link { /*el orden si importa */
+    color: blueviolet; /*un enlace que nunca fue visitado.*/
+}
+
+a:visited { /*un enlace que ya fue visitado.*/
+    color: blue;
+}
+
+a:hover { /*pasás el mouse por encima del enlace. Cambia el color*/
+    color: yellow;
+}
+
+a:active { /* enlace ativo */
+    color: #f00;
+}
+h3 {
+    color: darkgreen;
+    text-align: center;
+    font-size: 35px
+    
+}
+ul {
+    font-size: 25px;
+    list-style-type: none;
+    text-align: center;
+    background-color: aqua;
+    margin: 20px auto;
+    padding: 0px;
+    font-family: "roboto";
+    width: auto;
+    height: auto;
+    font-size: 1.5rem;
+    width: fit-content; /* hace que el fondo se ajuste a su contenido */ 
+    border: 1px #000 solid ;
+}
+
+table {
+
+    width: 100%;
+    border: 1px #000 solid;
+    border-collapse: collapse;
+    color: #000;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px #000 solid;
+    padding: 5px;
+    
+
+}
+
+td {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+th {
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    font-family: "roboto";
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+
+}
+
+tr :hover {
+    background-color: #aaa;
+    cursor: pointer; /*coloca el icono de la manito */
+}
+/*
+.cuadro {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 59px;
+    color: coral;
+    width: 200px;
+}
+*/
+.columna {
+    float: left; /* o right, según cómo quieras alinear */
+    border: #00f solid;
+    border-radius: 3px;
+    width: 33.33%; /* ¡3 columnas x 33.33% = 100% */
+    box-sizing: border-box;
+    color: darkblue;
+}
+
+.imagen {
+
+    float: left;
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+
+
+}
+
+.parrafo {
+
+    width: 40%;
+    font-size: 30px;
+    font-family: "roboto";
+    float: right;
+    box-sizing: border-box;
+    color: #00f
+
+}
