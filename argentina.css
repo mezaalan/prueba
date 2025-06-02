@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Montserrat-";
+    src: url("Montserrat-.ttf") format("truetype");
+}
+
+html {
+    font-size: 20px; 
+  }
+
+body {
+    font-family: "Montserrat-", sans-serif;
+    background-color: rgb(255, 255, 255);
+} 
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box; 
+}
+ 
+.titulo {
+     display: flex;               /* Pone imagen y texto en fila */
+     align-items: center;         /* Alinea verticalmente */
+     justify-content: center;              /* Espacio entre imagen y texto */
+     color: #867474;
+     margin: 0;
+     padding: 20px;
+     width: 100%;
+     height: 20vh;
+     box-sizing: border-box;
+}
+ 
+.imagen {
+     height: 170px;              /* Misma altura que el texto */
+     width: auto;               /* Mantiene proporción */
+     box-sizing: border-box;
+     margin: 0;
+}
+ 
+.menu {
+     position: relative;
+     display: flex;
+     justify-content: space-around; /* pone espacios entre las palabras */
+     align-items: center;
+     color: #867474;
+     margin: 0;
+     padding: 20px;
+     width: 100vw; 
+     box-sizing: border-box;
+     overflow-wrap: break-word;
+}
+
+.container2 {
+    display: flex;
+    background-color: #e8d8f2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box; 
+}
+
+.titulo2{
+    display: block;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.texto {
+    width: auto;
+    white-space: normal;
+    line-height: normal;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    color: #867474;
+    max-width: 60%;
+}
+
+.imagen {
+    max-width: 40%;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+
+.conteiner3 {
+    background-color: #e8d8f2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box; 
+}

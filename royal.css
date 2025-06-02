@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "Montserrat-";
+    src: url("Montserrat-.ttf") format("truetype");
+}
+
+html {
+    font-size: 20px; 
+  }
+
+body {
+    font-family: "Montserrat-", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px;
+   width: 100%;
+   margin-top: auto;
+   box-sizing: border-box; 
+}
+
+.titulo {
+    display: flex;               /* Pone imagen y texto en fila */
+    align-items: center;         /* Alinea verticalmente */
+    justify-content: center;              /* Espacio entre imagen y texto */
+    color: #867474;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+  }
+
+.imagen {
+    height: 170px;              /* Misma altura que el texto */
+    width: auto;               /* Mantiene proporción */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around; /* pone espacios entre las palabras */
+    align-items: center;
+    color: #867474;
+    margin: 0;
+    padding: 20px;
+    width: 100vw; 
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+  
+.menu a {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: #41b3d6;
+}
+
+.subtitulo {
+    background: linear-gradient(to right, #e3e4fb, #efd8e7, #d0c2d8 );
+    text-align: center;
+    padding: 30px 30px;
+    color: #867474;
+
+}
+
+.tarjetas {
+    display: flex; /*convierte en un contenedor flixible*/
+    justify-content: space-around; /* Espacio entre tarjetas */
+    flex-wrap: wrap;               /* Para que bajen en pantallas chicas */
+    gap: 20px;
+    margin: 20px;
+    color: #867474;
+}
+  
+.tarjeta1 {
+    background-color: #e3e4fb;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.tarjeta2 {
+    background-color: #efd8ef;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.tarjeta3 {
+    background-color: #d0c1d8;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    overflow-x: auto;       /* ✅ Permite scroll si la tabla es muy grande */
+    max-width: 100%;        /* ✅ Limita el ancho al 100% del contenedor padre */
+}
+
+h2 {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    color: #867474;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: sans-serif;
+  }
+  
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.formulario label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+.formulario button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #41b3d6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.formulario button:hover {
+    background-color: #3491ae;
+}
+
+.tabla-destinos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+  
+.tabla-destinos th,
+.tabla-destinos td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;     /* rompe palabras largas */
+    word-break: break-word;    /* fuerza el corte si es necesario */
+    white-space: normal;       /* permite múltiples líneas */
+}
+  
+.tarjetas ul {
+    padding-left: 20px;
+    list-style-type: none;
+    text-align: left;
+  }
+ 
+ul li::before {
+    content: "★";    
+    margin-right: 8px;
+    color: #db68db;
+}
+  
+.pie-de-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box; 
+}
+
+.copyright {
+    float: left;
+    width: auto;
+    white-space: normal;
+    line-height: normal;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+.ir {
+    float: right;
+    width: auto;
+    white-space: normal;
+    line-height: normal;
+    text-align: right;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.ir a {
+    position: fixed;
+    text-decoration: none;
+    font-size: 1.5rem;
+    left: 90%;
+    top: 88%;
+    overflow: hidden;
+    text-align: center;
+    width: max-content;
+    color: #bfae9f;
+}
+  
+  .ir a:hover {
+    text-decoration: underline;
+}
