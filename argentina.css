@@ -52,50 +52,6 @@ body {
      width: 100vw; 
      box-sizing: border-box;
      overflow-wrap: break-word;
-}
+     }
 
-.container2 {
-    display: flex;
-    background-color: #e8d8f2;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    width: 100%;
-    margin-top: auto;
-    box-sizing: border-box; 
-}
-
-.titulo2{
-    display: block;
-    font-size: 2rem;
-    color: black;
-    text-align: center;
-}
-
-.texto {
-    width: auto;
-    white-space: normal;
-    line-height: normal;
-    padding: 0px;
-    box-sizing: border-box;
-    margin: 0;
-    color: #867474;
-    max-width: 60%;
-}
-
-.imagen {
-    max-width: 40%;
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-  }
-
-.conteiner3 {
-    background-color: #e8d8f2;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    width: 100%;
-    margin-top: auto;
-    box-sizing: border-box; 
-}
+     
