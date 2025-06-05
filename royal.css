@@ -82,7 +82,7 @@ body {
 
 .hr {
     max-width: 980px;
-    margin-top: 17px;
+    margin-top: 23px;
     
 }
 
@@ -93,7 +93,7 @@ body {
     gap: 20px;
     max-width: 960px;
     background-color: rgb(255, 255, 255);
-    margin: -15px auto;
+    margin: 0px auto;
     align-items: stretch;
     height: 100%;
 }
@@ -109,6 +109,13 @@ body {
     flex: 1 1 30%;
 }
 
+.tercer-titulo-tarje1 {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin: 7px;
+
+}
 .tarjeta2 {
     background-color: #efd8ef;
     border: 1px solid #ffffff;
@@ -135,7 +142,7 @@ h2 {
     color: black;
     font-size: 25px;
     text-align: center;
-    margin: -4px;
+    margin: 7px;
 }
 
 h3 {
