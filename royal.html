@@ -4,63 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="royal.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>royal empire</title>
 </head>
 <body>
-<header id="inicio">
+<header id="inicio" class="header">
     <div  class="contenedor">
             <img src="vuelo.jpg" alt="logo de royal" class="imagen">
             <h1 class="titulo"> ROYAL EMPIRE</h1>
     </div>
     <nav class="menu">
-        <a href="argentina.html"> ARGENTINA</a>
-        <a href=""> BRASIL</a>
-        <a href=""> URUGUAY</a>
-        <a href=""> PARAGUAY</a>
-        <a href=""> CHILE</a>  
+        <a href="argentina.html"> argentina</a>
+        <a href=""> brasil</a>
+        <a href=""> uruguay</a>
+        <a href=""> paraguay</a>
+        <a href=""> chile</a>  
+        <a href=""> colombia</a>
     </nav>
 </header>
-<div>
+<div class="sub">
     <h1 class="subtitulo"> Viaja por todo el Cono Sur con 20% OFF </h1>
+<hr class="hr">
 </div>
-<hr>
 <div class="tarjetas">
     <div class="tarjeta1">
         <h2 class="tercer-titulo">actividades</h2>
         <h3> ACTIVIDADES Y EVENTOS TODAS LAS SEMANAS</h3>
-        <ul>
-            <li><strong>Recorridos</strong> por las mejores playas</li>
-            <li><strong>Paseos</strong> por <em>maravillas históricas</em></li>
-            <li><strong>Actividades</strong> al aire libre</li>
-            <li><strong>Entretenimiento</strong> para los más chicos</li>
+        <ul class="uno">
+            <li>Recorridos por las mejores playas</li>
+            <li>Paseos por maravillas históricas</li>
+            <li>Actividades al aire libre</li>
+            <li>Entretenimiento para los más chicos</li>
         </ul>
     </div>
 
     <div class="tarjeta2 formulario">
         <h2 class="tercer-titulo"> ¿ESTA INTERESADO? </h2>
-        <h3> deja tus datos y te contactamos en el acto !sin compromiso¡</h3>
+        <h3> deja tus datos y te contactamos en el acto</h3>
         <form action="" method="">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Nombre del cliente</label>
             <input type="text" id="nombre" name="nombre" required>
-          
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-          
-            <label for="mensaje">ingrese su destino:</label>
-            <textarea id="text" name="mensaje" rows="5" required></textarea>
+        
+            <label for="destino">Destino</label>
+            <input type="text" id="destino" name="destino" required>
+        
+            <label for="celular">Número de celular</label>
+            <input type="tel" id="celular" name="celular" required>
           
             <button type="submit">Enviar</button>
         </form>
     </div>
     <div class="tarjeta3">
         <h2 class="tercer-titulo">MEJORES DESTINOS</h2>
-        <h3>descubrí lo mejor de cada país y viví experiencias inolvidables</h3>
-        <ul>
-            <li><strong>ARGENTINA:</strong> Bariloche, Cataratas del Iguazú, Ushuaia</li>
-            <li><strong>BRASIL:</strong> Río de Janeiro, Florianópolis, Salvador</li>
-            <li><strong>URUGUAY:</strong> Punta del Este, Colonia, Montevideo</li>
+        <ul class="dos">
+            <li>argentina: Bariloche, Cataratas del Iguazú, Ushuaia</li>
+            <li>brasil: Río de Janeiro, Florianópolis, Salvador</li>
+            <li>uruguay: Punta del Este, Colonia, Montevideo</li>
+            <li>colombia: Cartagena de Indias, Parque Tayrona, Eje Cafetero </li>
+            <li>chile: San Pedro de Atacama, Torres del Paine, Valparaíso</li>
         </ul>
-    </div>
+    </div> 
 <footer class="pie-de-pagina">
     <p class="copyright">
         <a href="proyecto.html">copyright</a>
