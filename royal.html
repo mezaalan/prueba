@@ -28,8 +28,8 @@
 <hr class="hr">
 </div>
 <div class="tarjetas">
-    <div class="tarjeta1">
-        <h2 class="tercer-titulo-tarje1">actividades</h2>
+    <div class="tarjeta color1">
+        <h2 class="tercer-titulo-tarje1">Actividades</h2>
         <h3> ACTIVIDADES Y EVENTOS TODAS LAS SEMANAS</h3>
         <ul class="uno">
             <li>Recorridos por las mejores playas</li>
@@ -39,24 +39,41 @@
         </ul>
     </div>
 
-    <div class="tarjeta2 formulario">
-        <h2 class="tercer-titulo"> ¿ESTA INTERESADO? </h2>
+    <div class="tarjeta formulario color2">
+        <h2 class="tercer-titulo"> ¿Esta interesado? </h2>
         <h3> deja tus datos y te contactamos en el acto</h3>
         <form action="" method="">
             <label for="nombre">Nombre del cliente</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
         
             <label for="destino">Destino</label>
-            <input type="text" id="destino" name="destino" required>
+            <input type="text" placeholder="Lugar" id="destino" name="destino" required>
         
             <label for="celular">Número de celular</label>
-            <input type="tel" id="celular" name="celular" required>
+            <input type="tel" placeholder="Celular" id="celular" name="celular" required>
           
-            <button type="submit">Enviar</button>
+            <p class="pregunta">¿Qué tipo de viaje querés?</p>
+            <div class="seleccion-viaje">
+                <ul class="opciones-viaje">
+                  <li>
+                    <label>
+                      <input type="radio" name="tipoViaje" value="familia">
+                      Para una familia tipo
+                    </label>
+                  </li>
+                  <li class="lista-2">
+                    <label>
+                      <input type="radio" name="tipoViaje" value="solitario">
+                      Para una familia grande
+                    </label>
+                  </li>
+                </ul>
+            </div>
+        <!--       <button type="submit">Enviar</button>--> 
         </form>
     </div>
-    <div class="tarjeta3">
-        <h2 class="tercer-titulo">MEJORES DESTINOS</h2>
+    <div class="tarjeta color3">
+        <h2 class="tercer-titulo">Mejores destinos</h2>
         <ul class="dos">
             <li>argentina: Bariloche, Cataratas del Iguazú, Ushuaia</li>
             <li>brasil: Río de Janeiro, Florianópolis, Salvador</li>
