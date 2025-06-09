@@ -2,6 +2,14 @@
     font-family: "Alef-Regular";
     src: url("Alef-Regular.ttf") format("truetype");
 }
+@font-face {
+    font-family: "RobotoCondensed-Italic-Variable";
+    src: url("RobotoCondensed-Italic-Variable.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    src: url("Oswald.ttf") format("truetype");
+}
 
 html {
     font-size: 20px; 
@@ -16,14 +24,12 @@ body {
     max-width: 960px;
     background-color: white;
     margin: 0 auto;
-    padding-top: 9px;
 }
 .contenedor {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 30px;
-   margin-top: 7px; 
+   padding: 12px;
    height: 90px;
 }
 
@@ -31,11 +37,12 @@ body {
     display: flex;               /* Pone imagen y texto en fila */
     align-items: center;         /* Alinea verticalmente */
     justify-content: center;              /* Espacio entre imagen y texto */
-    color: #867474;
+    color: #7f8287;
     margin: 0;
     padding: 20px;
-    width: 88%;
-    font-size: 50px;
+    width: 82%;
+    font-size: 46px;
+    font-weight: 100;
   }
 
 .imagen {
@@ -45,26 +52,22 @@ body {
 }
 
 .menu {
-    position: relative;
     display: flex;
     justify-content: space-around; /* pone espacios entre las palabras */
-    align-items: center;
-    color: #867474;
-    margin: 0 auto;
-    padding: 21px;
+    padding: 19px;
+    margin-top: 12px;
     overflow-wrap: break-word;
 }
   
 .menu a {
     text-decoration: underline;
-    font-size: 32px;
+    font-size: 22px;
     color: #37839b;
 }
 
 .sub{
     background-color: white;
     max-width: 960px;
-    box-sizing: border-box;
     margin: 0 auto;
     height: 130px;
 }
@@ -72,12 +75,14 @@ body {
 .subtitulo {
     background: linear-gradient(to right, #5a99a0 0%, #e2dedf 30%, #e2dedf 100%);
     text-align: center;
-    padding: 18px;
+    padding: 27px;
     color: #565857;
     margin: 0 auto;
-    font-size: 42px;
-    max-width: 925px;
-    height: 96px;
+    font-size: 40px;
+    font-weight: 100;
+    max-width: 920px;
+    height: 100px;
+    font-family:"Oswald" ;
 }
 
 .hr {
@@ -121,7 +126,7 @@ h2 {
     color: black;
     font-size: 25px;
     text-align: center;
-    margin: 0px;
+    margin: 5px;
 }
 
 h3 {
@@ -144,7 +149,7 @@ h3 {
 .formulario label {
     margin-bottom: 0px;
     font-size: 16px;
-    margin-top: 4px;
+    margin-top: 3px;
 }
   
 .formulario input,
@@ -160,10 +165,10 @@ h3 {
 }
 .opciones-viaje {
     list-style: none;       
-    padding: 30px;
+    padding: 37px;
     display: flex;
     flex-direction: column;  
-    margin-top: 4px;
+    margin-top: 0px;
   }
   
   .opciones-viaje li {
@@ -176,29 +181,26 @@ h3 {
   }
   .opciones-viaje input[type="radio"] {
     appearance: none;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border: none;
     cursor: pointer;
     background-color: #dfdfdf;
+    border: 1px solid #999;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
   }
 
-
-  /*
-.formulario button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #41b3d6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+  .opciones-viaje input[type="radio"]:hover {
+    border-color: #555;           /* Cambio de color al pasar el mouse */
+  }
   
-.formulario button:hover {
-    background-color: #3491ae;
-}
-*/
+  .opciones-viaje input[type="radio"]:checked {
+    background-color: #444;       /* Fondo oscuro al seleccionar */
+    border-color: #444;           /* Borde se hace igual al fondo */
+  }
+
 .tabla-destinos {
     width: 100%;
     border-collapse: collapse;
@@ -217,19 +219,45 @@ h3 {
 }
   
 .uno {
-    padding-left: 14px;
+    padding-left: 15px;
     list-style-type: disc;
     text-align: left;
-    line-height: 38px;
+    line-height: 39px;
+    font-size: 18px;
   }
   
 .dos {
-    padding-left: 19px;
+    padding-left: 20px;
     list-style-type: disc;
     text-align: left;
     line-height: 24px;
     margin-top: 44px;
+    font-size: 18px;
   }
+
+  .dos li {
+    margin-bottom: 20px;  /* Espacio entre ítems */
+  }
+
+.dos li:nth-child(2),
+.dos li:nth-child(4) {
+  color: #777; 
+}
+  
+  .boton-enviar {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .boton-enviar:hover {
+    background-color: #444;
+  }
+  
   
 .pie-de-pagina {
     display: flex;
